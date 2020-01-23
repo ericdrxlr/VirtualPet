@@ -5,15 +5,10 @@ namespace VirtualPet
     class Program
     {
 
-        //Fixed the TDD
         static void Main(string[] args)
         {
             //Create Virtual Pet
             VirtualPet myCat = new VirtualPet();
-
-            VirtualPet secondCat = new VirtualPet("Kit", 5, "Mountain Cat");
-
-            //Added a Comment here
 
 
             //create menu here
@@ -38,12 +33,12 @@ namespace VirtualPet
                         Console.WriteLine("Your Pet is in the Shelter.");
 
                         Console.WriteLine("What is the Pets Name?");
-                        string UsersPetsName = Console.ReadLine();
-                        myCat.Name = UsersPetsName;
+                        string usersPetsName = Console.ReadLine();
+                        myCat.Name = usersPetsName;
 
                         Console.WriteLine("What is your Pets Species?");
-                        string UserPetsSpecies = Console.ReadLine();
-                        myCat.Species = UserPetsSpecies;
+                        string userPetsSpecies = Console.ReadLine();
+                        myCat.Species = userPetsSpecies;
                         break;
 
                     case "2":
