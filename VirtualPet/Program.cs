@@ -58,8 +58,7 @@ namespace VirtualPet
                     case "6":
                         //Play with pet
                         //hunger lvl increases, boredom decreases, health increases
-                        Console.WriteLine($"My Pets Bordom Status: {--myCat.Boredom} Hunger: {++myCat.Hunger} Health: {++myCat.HealthLevel}");
-
+                        myCat.PlayWithPet();
                         break;
                     default:
                         break;
