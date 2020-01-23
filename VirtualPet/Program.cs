@@ -47,8 +47,7 @@ namespace VirtualPet
 
                     case "4":
                         //Feed The Pet
-
-                        Console.WriteLine($"My Pets Hunger Status: {--myCat.Hunger}");
+                        myCat.FeedPet();
                         break;
 
                     case "5":

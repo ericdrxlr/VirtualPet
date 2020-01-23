@@ -61,6 +61,12 @@ namespace VirtualPet
 
         }
 
+        public void FeedPet()
+        {
+            Console.WriteLine($"My Pets Hunger Status: {--Hunger}");
+
+        }
+
 
 
     }
