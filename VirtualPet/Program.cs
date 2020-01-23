@@ -30,15 +30,9 @@ namespace VirtualPet
                 switch (menuChoice)
                 {
                     case "1":
-                        Console.WriteLine("Your Pet is in the Shelter.");
-
-                        Console.WriteLine("What is the Pets Name?");
-                        string usersPetsName = Console.ReadLine();
-                        myCat.Name = usersPetsName;
-
-                        Console.WriteLine("What is your Pets Species?");
-                        string userPetsSpecies = Console.ReadLine();
-                        myCat.Species = userPetsSpecies;
+                        myCat.AddPetToShelter();
+                        myCat.SetPetName();
+                        myCat.SetPetSpecies();
                         break;
 
                     case "2":

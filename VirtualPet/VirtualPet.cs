@@ -35,8 +35,21 @@ namespace VirtualPet
             Console.WriteLine("What is the Pet's name?");
             string UsersPetsName = Console.ReadLine();
             Name = UsersPetsName;
-
         }
+
+        public void SetPetSpecies()
+        {
+            Console.WriteLine("What is your Pets Species?");
+            string userPetsSpecies = Console.ReadLine();
+            Species = userPetsSpecies;
+        }
+
+        public void AddPetToShelter()
+        {
+            Console.WriteLine("Your Pet is in the Shelter.");
+        }
+
+
 
     }
 }
