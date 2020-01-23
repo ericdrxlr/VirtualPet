@@ -49,6 +49,18 @@ namespace VirtualPet
             Console.WriteLine("Your Pet is in the Shelter.");
         }
 
+        public void ViewPetInfo()
+        {
+            Console.WriteLine($"My pets name is {Name}. Its species is a {Species}.");
+
+        }
+
+        public void PetStatus()
+        {
+            Console.WriteLine($"My pets Health: {HealthLevel} Hunger: {Hunger} Boredom: {Boredom}");
+
+        }
+
 
 
     }

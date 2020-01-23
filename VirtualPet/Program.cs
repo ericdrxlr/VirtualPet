@@ -37,12 +37,12 @@ namespace VirtualPet
 
                     case "2":
                         //Show Pet Name and Species
-                        Console.WriteLine($"My pets name is {myCat.Name}. Its species is a {myCat.Species}.");
+                        myCat.ViewPetInfo();
                         break;
 
                     case "3":
                         //Show Pets Health, Boredom, Hunger
-                        Console.WriteLine($"My pets Health: {myCat.HealthLevel} Hunger: {myCat.Hunger} Boredom: {myCat.Boredom}");
+                        myCat.PetStatus();
                         break;
 
                     case "4":
