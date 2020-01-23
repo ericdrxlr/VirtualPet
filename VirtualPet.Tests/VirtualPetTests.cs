@@ -48,8 +48,20 @@ namespace VirtualPet.Tests
             myPet.Species = "cat";
 
             // Assert
-            Assert.Equal("dog", myPet.Species);
+            Assert.Equal("cat", myPet.Species);
+        }
+        [Fact]
+        public void Pet_Has_Boredom()
+        {
 
+            // Arrange
+            var myPet = new VirtualPet();
+
+            // Act
+            myPet.Boredom = 5;
+
+            // Assert
+            Assert.Equal(5, myPet.Boredom);
         }
             
     }
