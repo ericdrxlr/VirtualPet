@@ -52,8 +52,7 @@ namespace VirtualPet
 
                     case "5":
                         //Took Pet to Doctor
-
-                        Console.WriteLine($"My Pets Health Status: {++myCat.HealthLevel}");
+                        myCat.TakePetToDr();
                         break;
 
                     case "6":
