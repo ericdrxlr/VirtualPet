@@ -36,5 +36,21 @@ namespace VirtualPet.Tests
             //Assert
             Assert.Equal(5, myPet.Hunger);
         }
+        [Fact]
+        public void Pet_Has_Species()
+        {
+
+            // Arrange
+            var myPet = new VirtualPet();
+
+
+            // Act
+            myPet.Species = "cat";
+
+            // Assert
+            Assert.Equal("dog", myPet.Species);
+
+        }
+            
     }
 }
