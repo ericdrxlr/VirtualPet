@@ -81,7 +81,15 @@ namespace VirtualPet
 
         public void AddPetNameandSpeciesToList(List<VirtualPet> myPetList)
         {
-             // add pet.name and add pet.species to list
+            //access the list
+
+            //create a new object of the list
+
+            //add the current input pet.name and pet.species to list into the object
+
+            myPetList.Add(new VirtualPet() {Name = Name, Species = Species });
+
+
         }
 
 
