@@ -12,9 +12,9 @@ namespace VirtualPet
             VirtualPet myCat = new VirtualPet();
 
             //Create a new List
-            List<myCat> myPetList = new List<myCat>(); 
+            List<VirtualPet> myPetList = new List<VirtualPet>(); 
 
-            sadf
+         
             //create menu here
             //menu options here is to add pet to shelter
             string menuChoice = "";
