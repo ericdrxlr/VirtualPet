@@ -11,7 +11,7 @@ namespace VirtualPet
         List<VirtualPetShelter> myPetList = new List<VirtualPetShelter>();
 
 
-        public void AddMultPetToShelter(VirtualPet myCat)
+        public void AddPetToShelter(VirtualPet myCat)
         {
             
 
