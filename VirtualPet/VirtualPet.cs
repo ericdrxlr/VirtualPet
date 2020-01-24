@@ -79,9 +79,9 @@ namespace VirtualPet
 
         }
 
-        public void AddPetNameandSpeciesToList()
+        public void AddPetNameandSpeciesToList(List<VirtualPet> myPetList)
         {
-
+             
         }
 
 
