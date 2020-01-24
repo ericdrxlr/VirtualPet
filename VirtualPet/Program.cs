@@ -11,8 +11,8 @@ namespace VirtualPet
             //Create Virtual Pet
             VirtualPet myCat = new VirtualPet();
 
-            //Create a new List
-            List<VirtualPet> myPetList = new List<VirtualPet>(); 
+            //Create Shelter
+            VirtualPetShelter myShelter = new VirtualPetShelter();
 
             //create menu here
             //menu options here is to add pet to shelter
@@ -33,23 +33,16 @@ namespace VirtualPet
                 switch (menuChoice)
                 {
                     case "1":
-                        myCat.AddPetToShelter();
-                        myCat.SetPetName();
-                        myCat.SetPetSpecies();
-                        //Add Pet Name and Species to the List
-                        myCat.AddPetNameandSpeciesToList(myPetList);
+
+                        myCat.AddPetAndSpecies();
+                        myShelter.AddPetToShelter(myCat);
+
                         break;
 
                     case "2":
                         //Show Pet Name and Species
                         myCat.ViewPetInfo();
 
-                        //Loop through all the pets
-
-                        for (int i = 0; i < myPetList.Count; i++)
-                        {
-                            Console.WriteLine(myPetList[i].Name + "" + myPetList[i].Species);
-                        }
                         break;
 
                     case "3":

@@ -11,22 +11,21 @@ namespace VirtualPet
         List<VirtualPetShelter> myPetList = new List<VirtualPetShelter>();
 
 
-
-
-
-        /* public void AddPetNameandSpeciesToList(List<VirtualPet> myPetList)
+        public void AddMultPetToShelter(VirtualPet myCat)
         {
+            
+
             //access the list
 
             //create a new object of the list
 
             //add the current input pet.name and pet.species to list into the object
 
-            myPetList.Add(new VirtualPet() { Name = Name, Species = Species });
+            // myPetList.Add(new VirtualPet() { Name = Name, Species = Species });
 
 
         }
-        */
+       
 
 
     }

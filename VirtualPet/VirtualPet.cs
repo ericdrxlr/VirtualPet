@@ -30,7 +30,16 @@ namespace VirtualPet
 
         }
         // add methods here
-     
+        public void AddPetAndSpecies()
+        {
+            Console.WriteLine("What is the Pet's name?");
+            string UsersPetsName = Console.ReadLine();
+            Name = UsersPetsName;
+
+            Console.WriteLine("What is your Pets Species?");
+            string userPetsSpecies = Console.ReadLine();
+            Species = userPetsSpecies;
+        }
 
         public void ViewPetInfo()
         {
