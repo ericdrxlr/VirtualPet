@@ -7,13 +7,13 @@ namespace VirtualPet
     public class VirtualPetShelter
   
     {
-       
-        
-        
-        
-        
-        
-        
+        //Create a new List
+        List<VirtualPetShelter> myPetList = new List<VirtualPetShelter>();
+
+
+
+
+
         /* public void AddPetNameandSpeciesToList(List<VirtualPet> myPetList)
         {
             //access the list
