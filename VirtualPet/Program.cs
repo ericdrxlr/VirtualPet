@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace VirtualPet
 {
@@ -10,7 +11,10 @@ namespace VirtualPet
             //Create Virtual Pet
             VirtualPet myCat = new VirtualPet();
 
+            //Create a new List
+            List<myCat> myPetList = new List<myCat>(); 
 
+            sadf
             //create menu here
             //menu options here is to add pet to shelter
             string menuChoice = "";
