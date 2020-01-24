@@ -6,7 +6,7 @@ Virtual Toys, Inc. wants you to build the next iteration of virtual pets to mark
 
 Our pets are organic or robotic! They are housed in a shelter and cared for by you. They have unique personalities. They can be adopted.
 
-###### Virtual Toys, Inc. provides: <h6>
+### Virtual Toys, Inc. provides: <h3>
 
 * Development of a C# console application by a team that practices agile methodology, utilizes test driven design, and values clean code
 * An interactive user interface
