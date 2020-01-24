@@ -87,9 +87,11 @@ namespace VirtualPet.Tests
             // Assert - assess if property is equal to initialized variable
             Assert.Equal(8, myCat.HealthLevel);
 
-
         }
 
-            
+       
+
+
+
     }
 }
