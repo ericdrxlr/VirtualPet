@@ -63,6 +63,33 @@ namespace VirtualPet.Tests
             // Assert
             Assert.Equal(5, myPet.Boredom);
         }
+        [Fact]
+        public void Pets_Health()
+        {
+            // Arrange
+            var myCat = new VirtualPet();
+
+            // Act
+            myCat.HealthLevel = 5;
+
+            // Assert
+            Assert.Equal(5, myCat.HealthLevel);
+        }
+        [Fact]
+        public void Took_Pet_To_Doctor()
+        {
+            // Arrange
+            var myCat = new VirtualPet();
+
+            // Act - initialize variable
+            myCat.HealthLevel = 8;
+
+            // Assert - assess if property is equal to initialized variable
+            Assert.Equal(8, myCat.HealthLevel);
+
+
+        }
+
             
     }
 }
