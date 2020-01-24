@@ -43,6 +43,13 @@ namespace VirtualPet
                     case "2":
                         //Show Pet Name and Species
                         myCat.ViewPetInfo();
+
+                        //Loop through all the pets
+
+                        for (int i = 0; i < myPetList.Count; i++)
+                        {
+                            Console.WriteLine(myPetList[i].Name);
+                        }
                         break;
 
                     case "3":
