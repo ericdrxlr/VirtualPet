@@ -79,6 +79,11 @@ namespace VirtualPet
 
         }
 
+        public void AddPetNameandSpeciesToList()
+        {
+
+        }
+
 
 
     }

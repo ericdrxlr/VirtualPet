@@ -14,7 +14,6 @@ namespace VirtualPet
             //Create a new List
             List<VirtualPet> myPetList = new List<VirtualPet>(); 
 
-         
             //create menu here
             //menu options here is to add pet to shelter
             string menuChoice = "";
@@ -37,6 +36,8 @@ namespace VirtualPet
                         myCat.AddPetToShelter();
                         myCat.SetPetName();
                         myCat.SetPetSpecies();
+                        //Add Pet Name and Species to the List
+                        myCat.AddPetNameandSpeciesToList(myPetList);
                         break;
 
                     case "2":
