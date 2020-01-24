@@ -48,7 +48,7 @@ namespace VirtualPet
 
                         for (int i = 0; i < myPetList.Count; i++)
                         {
-                            Console.WriteLine(myPetList[i].Name);
+                            Console.WriteLine(myPetList[i].Name + "" + myPetList[i].Species);
                         }
                         break;
 
