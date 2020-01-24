@@ -1,5 +1,6 @@
 # VirtualPet
-# <h1> This is an  
+
+# This is an  <h1>
 Do you remember Cyberpet? Tamagotchi? Digimon? Petz? Virtual pets like these were born in 1996. With your help, they will be reborn.
 
 Virtual Toys, Inc. wants you to build the next iteration of virtual pets to market to adults who enjoy updated versions of the toys and games they played in their youth. This game will be like the virtual pets of 1996...but so much more. It’s Virtual Pets Amok!
