@@ -11,15 +11,17 @@ namespace VirtualPet
 
         public string Name { get; set; }
         public string Species { get; set; }
-        public int Hunger { get; set; } = 5;
-        public int Boredom { get; set; } = 5;
-        public int HealthLevel { get; set; } = 5;
+        public int Hunger { get; set; } 
+        public int Boredom { get; set; } 
+        public int HealthLevel { get; set; } 
 
 
         // add constructors here
         public VirtualPet()
         {
-
+            Hunger = 5;
+            Boredom = 5;
+            HealthLevel = 5;
         }
 
         public VirtualPet(string name, string species)
@@ -51,7 +53,7 @@ namespace VirtualPet
 
         public void PetStatus()
         {
-            Console.WriteLine($"My pets Health: {HealthLevel} Hunger: {Hunger} Boredom: {Boredom}");
+            Console.WriteLine($"Name: {Name} | Health: {HealthLevel} | Hunger: {Hunger} | Boredom: {Boredom}");
 
         }
 
