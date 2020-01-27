@@ -8,22 +8,31 @@ namespace VirtualPet
   
     {
         //Create a new List
-        List<VirtualPetShelter> myPetList = new List<VirtualPetShelter>();
+        List<VirtualPet> myPetList = new List<VirtualPet>();
 
 
         public void AddPetToShelter(VirtualPet myCat)
         {
+            myPetList.Add(myCat);
+        }
 
+        public void ShowPetList()
+        {
+           
+            for (int i = 0; i < myPetList.Count; i++)
+            {
+                Console.WriteLine(myPetList.Name[i]);
+            }
+         
 
-            //access the list
-
-            //create a new object of the list
-
-            //add the current input pet.name and pet.species to list into the object
-
-            // myPetList.Add(new VirtualPet() { Name = Name, Species = Species });
-            myPetList.Add(myCat(){myCat.Name});
-
+           
+            /*
+            foreach (VirtualPet petList in myPetList)
+            {
+                Console.WriteLine(petList);
+            }
+            */
+           
         }
        
 

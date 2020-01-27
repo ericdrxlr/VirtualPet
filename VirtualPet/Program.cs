@@ -36,13 +36,11 @@ namespace VirtualPet
 
                         myCat.AddPetAndSpecies();
                         myShelter.AddPetToShelter(myCat);
-
                         break;
 
                     case "2":
                         //Show Pet Name and Species
-                        myCat.ViewPetInfo();
-
+                        myShelter.ShowPetList();
                         break;
 
                     case "3":
