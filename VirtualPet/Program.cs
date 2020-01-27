@@ -23,7 +23,7 @@ namespace VirtualPet
             {
                 Console.WriteLine("Virtual Pet Menu");
                 Console.WriteLine("1. Add a Pet to shelter");
-                Console.WriteLine("2. Show All My Pets");
+                Console.WriteLine("2. Show All My Pets Info");
                 Console.WriteLine("3. Display Pets Status");
                 Console.WriteLine("4. Feed Pet");
                 Console.WriteLine("5. Take Pet to Doctor");
@@ -40,8 +40,8 @@ namespace VirtualPet
                         break;
 
                     case "2":
-                        //Show Pet Name and Species
-                        myShelter.ShowAllPets();
+                        //Show All Pets Names and Species
+                        myShelter.ViewAllPetsInfo();
                         break;
 
                     case "3":
