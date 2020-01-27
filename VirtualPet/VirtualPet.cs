@@ -79,7 +79,7 @@ namespace VirtualPet
 
             //add the current input pet.name and pet.species to list into the object
 
-            myPetList.Add(new VirtualPet() {Name = Name, Species = Species});
+           // myPetList.Add(new VirtualPet() {Name = Name, Species = Species});
 
 
         }

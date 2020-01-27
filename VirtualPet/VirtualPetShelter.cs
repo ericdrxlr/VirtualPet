@@ -13,7 +13,7 @@ namespace VirtualPet
 
         public void AddPetToShelter(VirtualPet myCat)
         {
-            
+
 
             //access the list
 
@@ -22,7 +22,7 @@ namespace VirtualPet
             //add the current input pet.name and pet.species to list into the object
 
             // myPetList.Add(new VirtualPet() { Name = Name, Species = Species });
-
+            myPetList.Add(myCat(){myCat.Name});
 
         }
        
