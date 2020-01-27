@@ -83,10 +83,10 @@ namespace VirtualPet.Tests
             var currentHunger = myCat.Hunger;
 
             // Act - initialize variable
-          //  var updatedHunger = myCat.FeedPet();
+             myCat.FeedPet();
 
             // Assert - assess if property is equal to initialized variable
-           // Assert.Equal(currentHunger - 1, updatedHunger);
+            Assert.Equal(currentHunger - 1, myCat.Hunger);
         }
         [Fact]
         public void TakePetToDr_Should_Increase_Health()
@@ -94,11 +94,12 @@ namespace VirtualPet.Tests
             // Arrange
             var myCat = new VirtualPet();
             var currentHealth = myCat.HealthLevel;
+            
             // Act
-            var updatedHealth = myCat.TakePetToDr();
+            myCat.TakePetToDr();
 
             // Assert
-            Assert.Equal(currentHealth+1, updatedHealth);
+            Assert.Equal(currentHealth+1, myCat.HealthLevel);
 
         }
 

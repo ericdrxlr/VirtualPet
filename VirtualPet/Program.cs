@@ -34,7 +34,7 @@ namespace VirtualPet
                 switch (menuChoice)
                 {
                     case "1":
-
+                        myCat = new VirtualPet();
                         myCat.AddPetAndSpecies();
                         myShelter.AddPetToShelter(myCat);
                         break;
