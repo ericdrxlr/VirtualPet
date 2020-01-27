@@ -17,13 +17,21 @@ namespace VirtualPet
             myPetList.Add(new VirtualPet(myCat.Name, myCat.Species));
         }
 
-        public void ShowAllPets()
+        public void ViewAllPetsInfo()
         {
             foreach (VirtualPet petList in myPetList)
             {
                 petList.ViewPetInfo();
             }
                     
+        }
+
+        public void ShowAllPetsStatus()
+        {
+            foreach (VirtualPet petList in myPetList)
+            {
+                petList.PetStatus();
+            }
         }
        
 
