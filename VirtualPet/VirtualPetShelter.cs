@@ -48,6 +48,13 @@ namespace VirtualPet
                 petList.PlayWithPet();
             }
         }
+        public void TakeAllPetsToDoctor()
+        {
+            foreach (VirtualPet petList in myPetList)
+            {
+                petList.TakePetToDr();
+            }
+        }
 
 
     }

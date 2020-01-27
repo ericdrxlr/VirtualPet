@@ -26,7 +26,7 @@ namespace VirtualPet
                 Console.WriteLine("2. Show All My Pets Info");
                 Console.WriteLine("3. Display All Pets Status");
                 Console.WriteLine("4. Feed All Pets");
-                Console.WriteLine("5. Take Pet to Doctor");
+                Console.WriteLine("5. Take All Pets to Doctor");
                 Console.WriteLine("6. Play with All Pets");
                 Console.WriteLine("9. Exit");
                 menuChoice = Console.ReadLine();
@@ -56,7 +56,7 @@ namespace VirtualPet
 
                     case "5":
                         //Took Pet to Doctor
-                        myCat.TakePetToDr();
+                        myShelter.TakeAllPetsToDoctor();
                         break;
 
                     case "6":

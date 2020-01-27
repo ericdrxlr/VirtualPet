@@ -65,7 +65,7 @@ namespace VirtualPet
 
         public void TakePetToDr()
         {
-            Console.WriteLine($"My Pets Health Status: {++HealthLevel}");
+            Console.WriteLine($"{Name}'s Health Status Decreased To {++HealthLevel}");
 
         }
 
