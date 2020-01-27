@@ -13,27 +13,17 @@ namespace VirtualPet
 
         public void AddPetToShelter(VirtualPet myCat)
         {
-            myPetList.Add(myCat);
+            //myPetList.Add(myCat);
+            myPetList.Add(new VirtualPet(myCat.Name, myCat.Species));
         }
 
-        public void ShowPetList()
+        public void ShowAllPets()
         {
-           
-            /*
-            for (int i = 0; i < myPetList.Count; i++)
-            {
-                Console.WriteLine(myPetList.[i]);
-            }
-         
-
-           
-            /*
             foreach (VirtualPet petList in myPetList)
             {
-                Console.WriteLine(petList);
+                petList.ViewPetInfo();
             }
-            */
-           
+                    
         }
        
 
