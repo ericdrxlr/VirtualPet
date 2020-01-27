@@ -19,6 +19,7 @@ namespace VirtualPet
         public void ShowPetList()
         {
            
+            /*
             for (int i = 0; i < myPetList.Count; i++)
             {
                 Console.WriteLine(myPetList.[i]);
