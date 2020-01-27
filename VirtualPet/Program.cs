@@ -46,7 +46,7 @@ namespace VirtualPet
 
                     case "3":
                         //Show Pets Health, Boredom, Hunger
-                        myCat.PetStatus();
+                        myShelter.ViewAllPetsStatus();
                         break;
 
                     case "4":

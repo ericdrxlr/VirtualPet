@@ -26,7 +26,7 @@ namespace VirtualPet
                     
         }
 
-        public void ShowAllPetsStatus()
+        public void ViewAllPetsStatus()
         {
             foreach (VirtualPet petList in myPetList)
             {
