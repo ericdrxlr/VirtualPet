@@ -39,11 +39,15 @@ namespace VirtualPet
             {
                 petList.FeedPet();
             }
-        
-        
         }
 
-       
+       public void PlayWithAllPets()
+        {
+            foreach (VirtualPet petList in myPetList)
+            {
+                petList.PlayWithPet();
+            }
+        }
 
 
     }

@@ -71,7 +71,7 @@ namespace VirtualPet
 
         public void PlayWithPet()
         {
-            Console.WriteLine($"My Pets Bordom Status: {--Boredom} Hunger: {++Hunger} Health: {++HealthLevel}");
+            Console.WriteLine($"{Name}'s Boredom Status: {--Boredom} Hunger: {++Hunger} Health: {++HealthLevel}");
 
         }
 
