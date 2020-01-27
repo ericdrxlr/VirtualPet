@@ -21,7 +21,7 @@ namespace VirtualPet
            
             for (int i = 0; i < myPetList.Count; i++)
             {
-                Console.WriteLine(myPetList.Name[i]);
+                Console.WriteLine(myPetList.[i]);
             }
          
 
