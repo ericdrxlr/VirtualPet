@@ -59,16 +59,17 @@ namespace VirtualPet
 
         public void FeedPet()
         {
-            Console.WriteLine($"{Name}'s Hunger Status Decreased To {--Hunger}");
+           Console.WriteLine($"{Name}'s Hunger Status Decreased To {--Hunger}");
+
 
         }
 
         public void TakePetToDr()
         {
-            Console.WriteLine($"{Name}'s Health Status Decreased To {++HealthLevel}");
-
+            Console.WriteLine($"{Name}'s Health Status Increased To {++HealthLevel}");
+            
         }
-
+        
         public void PlayWithPet()
         {
             Console.WriteLine($"{Name}'s Boredom Status: {--Boredom} Hunger: {++Hunger} Health: {++HealthLevel}");
