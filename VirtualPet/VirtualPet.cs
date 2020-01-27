@@ -22,11 +22,13 @@ namespace VirtualPet
 
         }
 
-        public VirtualPet(string name, int hunger, string species)
+        public VirtualPet(string name, string species)
         {
             Name = name;
-            Hunger = hunger;
             Species = species;
+            Hunger = 5;
+            Boredom = 5;
+            HealthLevel = 5;
 
         }
         // add methods here
