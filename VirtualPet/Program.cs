@@ -25,7 +25,7 @@ namespace VirtualPet
                 Console.WriteLine("1. Add a Pet to shelter");
                 Console.WriteLine("2. Show All My Pets Info");
                 Console.WriteLine("3. Display All Pets Status");
-                Console.WriteLine("4. Feed Pet");
+                Console.WriteLine("4. Feed All Pets");
                 Console.WriteLine("5. Take Pet to Doctor");
                 Console.WriteLine("6. Play with Pet");
                 Console.WriteLine("9. Exit");
@@ -51,7 +51,7 @@ namespace VirtualPet
 
                     case "4":
                         //Feed The Pet
-                        myCat.FeedPet();
+                        myShelter.FeedAllPets();
                         break;
 
                     case "5":

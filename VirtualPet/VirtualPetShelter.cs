@@ -33,6 +33,16 @@ namespace VirtualPet
                 petList.PetStatus();
             }
         }
+        public void FeedAllPets()
+        {
+            foreach (VirtualPet petList in myPetList)
+            {
+                petList.FeedPet();
+            }
+        
+        
+        }
+
        
 
 
