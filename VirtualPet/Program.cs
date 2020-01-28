@@ -22,13 +22,12 @@ namespace VirtualPet
             while (userPlaying)
             {
                 Console.WriteLine("Virtual Pet Menu");
-                Console.WriteLine("1. Add a Pet to shelter");
-                Console.WriteLine("2. Show All My Pets Info");
+                Console.WriteLine("\n1. Add A Pet To Shelter");
+                Console.WriteLine("2. Display All My Pets Info");
                 Console.WriteLine("3. Display All Pets Status");
-                Console.WriteLine("4. Feed All Pets");
-                Console.WriteLine("5. Take All Pets to Doctor");
-                Console.WriteLine("6. Play with All Pets");
-                Console.WriteLine("9. Exit");
+                Console.WriteLine("4. Interact With A Pet");
+                Console.WriteLine("5. Interact With All Pets");
+                Console.WriteLine("6. Exit");
                 menuChoice = Console.ReadLine();
 
                 switch (menuChoice)
@@ -59,12 +58,12 @@ namespace VirtualPet
                         myShelter.TakeAllPetsToDoctor();
                         break;
 
-                    case "6":
+                    /*case "6":
                         //Play with pet
                         //hunger lvl increases, boredom decreases, health increases
                         myShelter.PlayWithAllPets();
-                        break;
-                    case "9":
+                        break;*/
+                    case "6":
                         //Set isPlaying to False and will exit the program
                         userPlaying = false;
                         break;
