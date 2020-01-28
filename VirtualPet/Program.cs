@@ -17,9 +17,9 @@ namespace VirtualPet
             //create menu here
             //menu options here is to add pet to shelter
             string menuChoice = "";
-            bool isPlaying = true;
+            bool userPlaying = true;
 
-            while (isPlaying)
+            while (userPlaying)
             {
                 Console.WriteLine("Virtual Pet Menu");
                 Console.WriteLine("1. Add a Pet to shelter");
@@ -66,7 +66,7 @@ namespace VirtualPet
                         break;
                     case "9":
                         //Set isPlaying to False and will exit the program
-                        isPlaying = false;
+                        userPlaying = false;
                         break;
                     default:
                         break;
