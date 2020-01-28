@@ -48,7 +48,7 @@ namespace VirtualPet
                         myShelter.ViewAllPetsStatus();
                         break;
 
-                    case "4":
+                    /*case "4":
                         //Feed The Pet
                         myShelter.FeedAllPets();
                         break;
@@ -58,7 +58,7 @@ namespace VirtualPet
                         myShelter.TakeAllPetsToDoctor();
                         break;
 
-                    /*case "6":
+                      case "6":
                         //Play with pet
                         //hunger lvl increases, boredom decreases, health increases
                         myShelter.PlayWithAllPets();
