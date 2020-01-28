@@ -21,8 +21,8 @@ namespace VirtualPet
 
             while (userPlaying)
             {
-                Console.WriteLine("Virtual Pet Menu");
-                Console.WriteLine("\n1. Add A Pet To Shelter");
+                Console.WriteLine("\nVirtual Pet Menu:");
+                Console.WriteLine("1. Add A Pet To Shelter");
                 Console.WriteLine("2. Display All My Pets Info");
                 Console.WriteLine("3. Display All Pets Status");
                 Console.WriteLine("4. Interact With A Pet");

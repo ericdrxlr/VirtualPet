@@ -99,12 +99,21 @@ namespace VirtualPet.Tests
             myCat.TakePetToDr();
 
             // Assert
-            Assert.Equal(currentHealth+1, myCat.HealthLevel);
-
+            Assert.Equal(currentHealth + 1, myCat.HealthLevel);
         }
 
+        [Fact]
+        public void PlayWithPet_Does_Boredom_Decrease()
+        {
+            //Arrange
+            var myCat = new VirtualPet();
+            var currentBoredom = myCat.Boredom;
+            //Act
+            myCat.PlayWithPet();
 
-
+            //Assert
+            Assert.Equal(currentBoredom - 1, myCat.Boredom);
+        }
 
     }
 }
