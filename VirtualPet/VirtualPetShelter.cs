@@ -37,7 +37,7 @@ namespace VirtualPet
         {
             foreach (VirtualPet petList in myPetList)
             {
-                //petList.FeedPet();
+                petList.FeedPet();
             }
         }
 
@@ -54,6 +54,52 @@ namespace VirtualPet
             {
                 petList.TakePetToDr();
             }
+        }
+
+        public void InteractWithAllPets()
+        {
+            string menuChoice = ""; //creating a variable for users petChoice
+            bool userPlaying = true;
+
+            while (userPlaying)
+            {
+                Console.WriteLine("Interact With All Your Pets");
+                Console.WriteLine("\n1. Feed All My Pets");
+                Console.WriteLine("2. Play With All My Pets");
+                Console.WriteLine("3. Take All My Pets To Doctor");
+                Console.WriteLine("4. Exit");
+
+                menuChoice = Console.ReadLine();
+
+                switch (menuChoice)
+                {
+                    case "1":
+                        //Feed The Pets
+                        FeedAllPets();
+                        break;
+
+                    case "2":
+                        //Play With All Pets
+                        PlayWithAllPets();
+                        break;
+
+                    case "3":
+                        //Take All Pets to the Dr
+                        TakeAllPetsToDoctor();
+                        break;
+
+                    case "4":
+                        //Set isPlaying to False and will exit the program
+                        userPlaying = false;
+                        break;
+
+                    default:
+                        break;
+
+
+                }
+            }
+
         }
 
 

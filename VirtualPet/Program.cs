@@ -27,7 +27,7 @@ namespace VirtualPet
                 Console.WriteLine("3. Display All Pets Status");
                 Console.WriteLine("4. Interact With A Pet");
                 Console.WriteLine("5. Interact With All Pets");
-                Console.WriteLine("6. Exit");
+                Console.WriteLine("6. Exit\n");
                 menuChoice = Console.ReadLine();
 
                 switch (menuChoice)
@@ -48,10 +48,12 @@ namespace VirtualPet
                         myShelter.ViewAllPetsStatus();
                         break;
 
-                    /*case "4":
-                        //Feed The Pet
-                        myShelter.FeedAllPets();
+                    case "5":
+                        //Interact with All Pets
+                        myShelter.InteractWithAllPets();
                         break;
+
+                    /*
 
                     case "5":
                         //Took Pet to Doctor
@@ -63,9 +65,11 @@ namespace VirtualPet
                         //hunger lvl increases, boredom decreases, health increases
                         myShelter.PlayWithAllPets();
                         break;*/
+
                     case "6":
                         //Set isPlaying to False and will exit the program
                         userPlaying = false;
+                     
                         break;
                     default:
                         break;

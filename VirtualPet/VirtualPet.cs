@@ -61,30 +61,12 @@ namespace VirtualPet
         //Waiting to created Interact with all pets
         
         }
-        public void InteractWithAllPets()
-        {
-            string menuChoice = ""; //creating a variable for users petChoice
-            bool userPlaying = true;
-
-            while (userPlaying) ;
-            {
-                Console.WriteLine("Interact With All Your Pets");
-                Console.WriteLine("\n1. Feed All My Pets");
-                Console.WriteLine("2. Play With All My Pets");
-                Console.WriteLine("3. Take All My Pets To Doctor");
-                Console.WriteLine("5. Exit");
-
-                menuChoice = Console.ReadLine();
-            }
-        
-        }
-        /*public void FeedPet()
+       
+        public void FeedPet()
         {
            Console.WriteLine($"{Name}'s Hunger Status Decreased To {--Hunger}");
-
-
         }
-        */
+ 
         public void TakePetToDr()
         {
             Console.WriteLine($"{Name}'s Health Status Increased To {++HealthLevel}");
@@ -96,20 +78,6 @@ namespace VirtualPet
             Console.WriteLine($"{Name}'s Boredom Status: {--Boredom} Hunger: {++Hunger} Health: {++HealthLevel}");
 
         }
-
-        public void AddPetNameandSpeciesToList(List<VirtualPet> myPetList)
-        {
-            //access the list
-
-            //create a new object of the list
-
-            //add the current input pet.name and pet.species to list into the object
-
-           // myPetList.Add(new VirtualPet() {Name = Name, Species = Species});
-
-
-        }
-
 
 
     }
