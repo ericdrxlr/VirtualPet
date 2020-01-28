@@ -10,10 +10,8 @@ namespace VirtualPet
         //Create a new List
         List<VirtualPet> myPetList = new List<VirtualPet>();
 
-
         public void AddPetToShelter(VirtualPet myCat)
-        {
-            //myPetList.Add(myCat);
+        { 
             myPetList.Add(new VirtualPet(myCat.Name, myCat.Species));
         }
 
@@ -22,8 +20,7 @@ namespace VirtualPet
             foreach (VirtualPet petList in myPetList)
             {
                 petList.ViewPetInfo();
-            }
-                    
+            }         
         }
 
         public void ViewAllPetsStatus()
@@ -96,12 +93,34 @@ namespace VirtualPet
                     default:
                         break;
 
-
                 }
+
             }
 
         }
+        public void InteractWith1Pet()
+        {
+           string menuChoice = "";
+            bool userIsPlaying = true;
 
+            Console.WriteLine();
+           // list of all pets here with its corresponding index
+           
+            //user chooses pet(also contains the conversion syntax)
+
+            //look up users petchoice in list 
+
+            //set new pet to pet choice within our list
+
+            //while loop starts here
+
+            //prompt user with menu choice
+
+            //switch
+            
+            }
+
+        }
 
     }
 }

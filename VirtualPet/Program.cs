@@ -48,23 +48,15 @@ namespace VirtualPet
                         myShelter.ViewAllPetsStatus();
                         break;
 
+                    case "4":
+                        //Interact with 1 pet
+                        myShelter.ViewAllPetsStatus();
+                        break;
+
                     case "5":
                         //Interact with All Pets
                         myShelter.InteractWithAllPets();
                         break;
-
-                    /*
-
-                    case "5":
-                        //Took Pet to Doctor
-                        myShelter.TakeAllPetsToDoctor();
-                        break;
-
-                      case "6":
-                        //Play with pet
-                        //hunger lvl increases, boredom decreases, health increases
-                        myShelter.PlayWithAllPets();
-                        break;*/
 
                     case "6":
                         //Set isPlaying to False and will exit the program

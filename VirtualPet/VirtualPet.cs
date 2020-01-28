@@ -56,12 +56,7 @@ namespace VirtualPet
             Console.WriteLine($"Name: {Name} | Health: {HealthLevel} | Hunger: {Hunger} | Boredom: {Boredom}");
 
         }
-        public void InteractWith1Pet()
-        { 
-        //Waiting to created Interact with all pets
         
-        }
-       
         public void FeedPet()
         {
            Console.WriteLine($"{Name}'s Hunger Status Decreased To {--Hunger}");
