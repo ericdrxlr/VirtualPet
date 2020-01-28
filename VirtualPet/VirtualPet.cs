@@ -62,7 +62,9 @@ namespace VirtualPet
         
         }
         public void InteractWithAllPets()
-        { 
+        {
+            string petChoice = ""; //creating a variable for users petChoice
+            bool 
             while()
         
         }
