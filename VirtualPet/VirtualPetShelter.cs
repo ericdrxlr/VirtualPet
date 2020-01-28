@@ -37,7 +37,7 @@ namespace VirtualPet
         {
             foreach (VirtualPet petList in myPetList)
             {
-                petList.FeedPet();
+                //petList.FeedPet();
             }
         }
 

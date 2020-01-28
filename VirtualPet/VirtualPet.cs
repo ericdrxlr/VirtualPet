@@ -63,9 +63,19 @@ namespace VirtualPet
         }
         public void InteractWithAllPets()
         {
-            string petChoice = ""; //creating a variable for users petChoice
-            bool 
-            while()
+            string menuChoice = ""; //creating a variable for users petChoice
+            bool userPlaying = true;
+
+            while (userPlaying) ;
+            {
+                Console.WriteLine("Interact With All Your Pets");
+                Console.WriteLine("\n1. Feed All My Pets");
+                Console.WriteLine("2. Play With All My Pets");
+                Console.WriteLine("3. Take All My Pets To Doctor");
+                Console.WriteLine("5. Exit");
+
+                menuChoice = Console.ReadLine();
+            }
         
         }
         /*public void FeedPet()
