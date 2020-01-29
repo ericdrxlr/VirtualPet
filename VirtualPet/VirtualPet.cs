@@ -70,7 +70,9 @@ namespace VirtualPet
         
         public void PlayWithPet()
         {
-            Console.WriteLine($"{Name}'s Boredom Status: {--Boredom} Hunger: {++Hunger} Health: {++HealthLevel}");
+            Console.WriteLine($"{Name}'s Boredom Status Decreased To {--Boredom} " +
+                $"\nHunger Status Increased To {++Hunger} " +
+                $"\nHealth Status Increased To {++HealthLevel}");
 
         }
         public void ViewPetInfoWithID(int counter)
