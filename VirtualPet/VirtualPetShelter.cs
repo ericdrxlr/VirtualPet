@@ -54,9 +54,11 @@ namespace VirtualPet
         }
         public void ShowPetInfoWithID()
         {
+            int counter = 1;
             foreach (VirtualPet petList in myPetList)
             {
-                petList.ViewPetInfoWithID();
+                petList.ViewPetInfoWithID(counter);
+                counter++;
             }
         }
 
