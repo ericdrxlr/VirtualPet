@@ -127,9 +127,9 @@ namespace VirtualPet
             while (userIsPlaying)
             {
                 Console.WriteLine("\nWhat Would You Like To Do With Your Pet?");
-                Console.WriteLine("1. Feed Your Pet");
-                Console.WriteLine("2. Play With Your Pet");
-                Console.WriteLine("3. Take Your Pet To The Doctor");
+                Console.WriteLine("1. Feed Pet");
+                Console.WriteLine("2. Play With Pet");
+                Console.WriteLine("3. Take Pet To The Doctor");
                 Console.WriteLine("4. Exit");
                 menuChoice = Console.ReadLine();
 
