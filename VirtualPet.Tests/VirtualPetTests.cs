@@ -83,7 +83,7 @@ namespace VirtualPet.Tests
             var currentHunger = myCat.Hunger;
 
             // Act - initialize variable
-             myCat.FeedPet();
+            myCat.FeedPet();
 
             // Assert - assess if property is equal to initialized variable
             Assert.Equal(currentHunger - 1, myCat.Hunger);
@@ -94,7 +94,7 @@ namespace VirtualPet.Tests
             // Arrange
             var myCat = new VirtualPet();
             var currentHealth = myCat.HealthLevel;
-            
+
             // Act
             myCat.TakePetToDr();
 
@@ -124,9 +124,19 @@ namespace VirtualPet.Tests
             testCat.PlayWithPet();
 
             // Assert
-            Assert.Equal(currentHunger + 1,testCat.Hunger);
+            Assert.Equal(currentHunger + 1, testCat.Hunger);
+        }
+        [Fact]
+        public void ViewPetsInfoWithID_Does_It_Show_ID()
+        {
+            //Arrange
+            var myCat = new VirtualPet();
+            var counterID = myCat.
+            //Act
 
-        
+            //Assert
+            Assert.Equal()
+        }
         
         
         
