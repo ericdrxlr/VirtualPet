@@ -109,9 +109,6 @@ namespace VirtualPet
         }
         public void InteractWith1Pet()
         {
-            //string menuChoice = "";
-            //bool userIsPlaying = true;
-
             // list of all pets here with its corresponding index
             ShowPetInfoWithID();
 
@@ -123,12 +120,42 @@ namespace VirtualPet
             //set new pet to pet choice within our list
             VirtualPet myPet = myPetList[userChoice-1];
 
+            
+            string menuChoice = "";
+            bool userIsPlaying = true;
             //while loop starts here
+            while (userIsPlaying)
+            {
+                Console.WriteLine("\nWhat Would You Like To Do With Your Pet?");
+                Console.WriteLine("1. Feed Your Pet");
+                Console.WriteLine("2. Play With Your Pet");
+                Console.WriteLine("3. Take Your Pet To The Doctor");
+                Console.WriteLine("4. Exit");
+                menuChoice = Console.ReadLine();
 
-            //prompt user with menu choice
+                switch (menuChoice)
+                {
+                    case "1":
+                        myPet.FeedPet();
+                        break;
 
-            //switch
+                    case "2":
+                        myPet.PlayWithPet();
+                        break;
 
+                    case "3":
+                        myPet.TakePetToDr();
+                        break;
+
+                    case "4":
+                        userIsPlaying = false;
+                        break;
+
+                    default:
+                        break;
+                }
+            
+            }
         }
 
     }
