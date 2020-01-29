@@ -114,6 +114,23 @@ namespace VirtualPet.Tests
             //Assert
             Assert.Equal(currentBoredom - 1, myCat.Boredom);
         }
+        [Fact]
+        public void PlayWithPet_Does_Hunger_Increase()
+        {
+            // Arrange
+            var testCat = new VirtualPet();
+            var currentHunger = testCat.Hunger;
+            // Act
+            testCat.PlayWithPet();
+
+            // Assert
+            Assert.Equal(currentHunger + 1,testCat.Hunger);
+
+        
+        
+        
+        
+        }
 
     }
 }
