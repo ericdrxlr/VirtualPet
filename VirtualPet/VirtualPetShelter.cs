@@ -119,11 +119,9 @@ namespace VirtualPet
             Console.WriteLine("Please select a pet from the above list.");
             int userChoice = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(userChoice);
-
             //look up users petchoice in list 
-
             //set new pet to pet choice within our list
+            VirtualPet myPet = myPetList[userChoice-1];
 
             //while loop starts here
 

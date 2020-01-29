@@ -75,10 +75,7 @@ namespace VirtualPet
         }
         public void ViewPetInfoWithID(int counter)
         {
-            
-            
-            Console.WriteLine($"{counter}. My pets name: {Name}. Its species: {Species}.");
-            
+            Console.WriteLine($"{counter}. My pets name: {Name}. Its species: {Species}.");   
         }
     }
 }
