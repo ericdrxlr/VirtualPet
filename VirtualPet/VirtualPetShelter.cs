@@ -112,10 +112,14 @@ namespace VirtualPet
             //string menuChoice = "";
             //bool userIsPlaying = true;
 
-            Console.WriteLine();
             // list of all pets here with its corresponding index
             ShowPetInfoWithID();
+
             //user chooses pet(also contains the conversion syntax)
+            Console.WriteLine("Please select a pet from the above list.");
+            int userChoice = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine(userChoice);
 
             //look up users petchoice in list 
 
