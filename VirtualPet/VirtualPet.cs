@@ -13,8 +13,8 @@ namespace VirtualPet
         public string Species { get; set; }
         public int Hunger { get; set; } 
         public int Boredom { get; set; } 
-        public int HealthLevel { get; set; } 
-
+        public int HealthLevel { get; set; }
+        public int counter = 1;
 
         // add constructors here
         public VirtualPet()
@@ -73,8 +73,13 @@ namespace VirtualPet
             Console.WriteLine($"{Name}'s Boredom Status: {--Boredom} Hunger: {++Hunger} Health: {++HealthLevel}");
 
         }
-
-
+        public void ViewPetInfoWithID()
+        {
+            
+            
+            Console.WriteLine($"{++counter}. My pets name is {Name}. Its species is a {Species}.");
+            
+        }
     }
 }
 

@@ -52,6 +52,13 @@ namespace VirtualPet
                 petList.TakePetToDr();
             }
         }
+        public void ShowPetInfoWithID()
+        {
+            foreach (VirtualPet petList in myPetList)
+            {
+                petList.ViewPetInfoWithID();
+            }
+        }
 
         public void InteractWithAllPets()
         {
@@ -105,7 +112,7 @@ namespace VirtualPet
 
             Console.WriteLine();
             // list of all pets here with its corresponding index
-
+            ShowPetInfoWithID();
             //user chooses pet(also contains the conversion syntax)
 
             //look up users petchoice in list 

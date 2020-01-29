@@ -50,7 +50,7 @@ namespace VirtualPet
 
                     case "4":
                         //Interact with 1 pet
-                        myShelter.ViewAllPetsStatus();
+                        myShelter.InteractWith1Pet();
                         break;
 
                     case "5":
