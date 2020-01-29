@@ -77,7 +77,7 @@ namespace VirtualPet
         {
             
             
-            Console.WriteLine($"{counter}. My pets name is {Name}. Its species is a {Species}.");
+            Console.WriteLine($"{counter}. My pets name: {Name}. Its species: {Species}.");
             
         }
     }
