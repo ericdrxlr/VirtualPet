@@ -10,7 +10,7 @@ namespace VirtualPet
         {
             //Create Virtual Pet
 
-            //Ready to Merge with Master
+          
             VirtualPet myCat = new VirtualPet();
 
             //Create Shelter
