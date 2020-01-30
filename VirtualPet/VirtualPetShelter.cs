@@ -109,16 +109,14 @@ namespace VirtualPet
         }
         public void InteractWith1Pet()
         {
-            //user chooses pet(also contains the conversion syntax)
+            
             Console.WriteLine("\nPlease select a pet from the above list.");
 
             // list of all pets here with its corresponding index
             ShowPetInfoWithID();
 
+            //user chooses pet(also contains the conversion syntax)
             int userChoice = Convert.ToInt32(Console.ReadLine());
-
-
-
 
             //look up users petchoice in list 
             //set new pet to pet choice within our list
