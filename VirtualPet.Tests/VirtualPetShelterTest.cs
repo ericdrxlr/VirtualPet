@@ -12,7 +12,26 @@ namespace VirtualPet.Tests
         {
             new VirtualPetShelter();
         }
+        [Fact]
+        public void TakeAllPetsToDr_Increases_Health()
+        {
+            // Arrange
+            var myShelter = new VirtualPetShelter();
+            var myCat = new VirtualPet();
+            var myCat1 = new VirtualPet();
+            var allCurrentHealthPets = myCat.HealthLevel;
 
+            // Act
+            //create list
+            myShelter.AddPetToShelter(myCat);
+            myShelter.AddPetToShelter(myCat);
+            myShelter.TakeAllPetsToDoctor();
+
+            // Assert
+        
+        
+        
+        }
   
 
 
