@@ -9,6 +9,8 @@ namespace VirtualPet
         static void Main(string[] args)
         {
             //Create Virtual Pet
+
+            //Ready to Merge
             VirtualPet myCat = new VirtualPet();
 
             //Create Shelter
