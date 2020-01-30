@@ -13,7 +13,7 @@ namespace VirtualPet.Tests
             new VirtualPetShelter();
         }
 
-        //Ask jen for assistance on test
+  
 
 
 

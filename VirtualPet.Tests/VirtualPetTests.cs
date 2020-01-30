@@ -127,17 +127,18 @@ namespace VirtualPet.Tests
             Assert.Equal(currentHunger + 1, testCat.Hunger);
         }
         [Fact]
-        public void ViewPetsInfoWithID_Does_It_Show_ID()
+        public void PlayWithPet_Does_Health_Status_Increase()
         {
-            //Arrange
+            // Act
             var myCat = new VirtualPet();
-            var counterID = myCat.
-            //Act
+            var currentHealth = myCat.HealthLevel;
 
-            //Assert
-            Assert.Equal()
-        }
-        
+            // Arrange
+            myCat.PlayWithPet();
+            
+            // Assert
+            Assert.Equal(currentHealth + 1, myCat.HealthLevel);
+
         
         
         }
