@@ -1,78 +1,69 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace VirtualPet
 {
     class Program
     {
 
-        //Fixed the TDD
         static void Main(string[] args)
         {
             //Create Virtual Pet
+
+          
             VirtualPet myCat = new VirtualPet();
 
-            VirtualPet secondCat = new VirtualPet("Kit", 5, "Mountain Cat");
-
-            //Added a Comment here
-
+            //Create Shelter
+            VirtualPetShelter myShelter = new VirtualPetShelter();
 
             //create menu here
             //menu options here is to add pet to shelter
             string menuChoice = "";
+            bool userPlaying = true;
 
-            while (menuChoice != "9")
+            while (userPlaying)
             {
-                Console.WriteLine("Virtual Pet Menu");
-                Console.WriteLine("1. Add a Pet to shelter");
-                Console.WriteLine("2. Show My Pets Info");
-                Console.WriteLine("3. Display Pets Status");
-                Console.WriteLine("4. Feed Pet");
-                Console.WriteLine("5. Take Pet to Doctor");
-                Console.WriteLine("6. Play with Pet");
-                Console.WriteLine("9. Exit");
+                Console.WriteLine("\nVirtual Pet Menu:");
+                Console.WriteLine("1. Add A Pet To Shelter");
+                Console.WriteLine("2. Display All My Pets Info");
+                Console.WriteLine("3. Display All Pets Status");
+                Console.WriteLine("4. Interact With A Pet");
+                Console.WriteLine("5. Interact With All Pets");
+                Console.WriteLine("6. Exit\n");
                 menuChoice = Console.ReadLine();
 
                 switch (menuChoice)
                 {
                     case "1":
-                        Console.WriteLine("Your Pet is in the Shelter.");
-
-                        Console.WriteLine("What is the Pets Name?");
-                        string UsersPetsName = Console.ReadLine();
-                        myCat.Name = UsersPetsName;
-
-                        Console.WriteLine("What is your Pets Species?");
-                        string UserPetsSpecies = Console.ReadLine();
-                        myCat.Species = UserPetsSpecies;
+                        myCat = new VirtualPet();
+                        myCat.AddPetAndSpecies();
+                        myShelter.AddPetToShelter(myCat);
                         break;
 
                     case "2":
-                        //Show Pet Name and Species
-                        Console.WriteLine($"My pets name is {myCat.Name}. Its species is a {myCat.Species}.");
+                        //Show All Pets Names and Species
+                        myShelter.ViewAllPetsInfo();
                         break;
 
                     case "3":
                         //Show Pets Health, Boredom, Hunger
-                        Console.WriteLine($"My pets Health: {myCat.HealthLevel} Hunger: {myCat.Hunger} Boredom: {myCat.Boredom}");
+                        myShelter.ViewAllPetsStatus();
                         break;
 
                     case "4":
-                        //Feed The Pet
-
-                        Console.WriteLine($"My Pets Hunger Status: {--myCat.Hunger}");
+                        //Interact with 1 pet
+                        myShelter.InteractWith1Pet();
                         break;
 
                     case "5":
-                        //Took Pet to Doctor
-
-                        Console.WriteLine($"My Pets Health Status: {++myCat.HealthLevel}");
+                        //Interact with All Pets
+                        myShelter.InteractWithAllPets();
                         break;
 
                     case "6":
-                        //Play with pet
-                        //hunger lvl increases, boredom decreases, health increases
-                        Console.WriteLine($"My Pets Bordom Status: {--myCat.Boredom} Hunger: {++myCat.Hunger} Health: {++myCat.HealthLevel}");
-
+                        //Set isPlaying to False and will exit the program
+                        userPlaying = false;
+                     
                         break;
                     default:
                         break;

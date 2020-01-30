@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="VirtualPet.VirtualPetShelter">
+    <Position X="9.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAgAABAAAAQAAAAAAAoAA=</HashCode>
+      <FileName>VirtualPetShelter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VirtualPet.VirtualPet">
+    <Position X="6" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAEQAAAAAAAAAAAgAAAAAQggAAAKAIAAAAAAAAAIAM=</HashCode>
+      <FileName>VirtualPet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
